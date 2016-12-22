@@ -15,9 +15,10 @@ def destroy
 @post = Post.find(params[:id])
 @post.destroy
 flash[:alert] ="Post deleted!"
-redirect_to root_path
-
+redirect_to account_posts_path
 end
+
+
 
 
 
